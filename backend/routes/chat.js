@@ -101,7 +101,7 @@ router.post("/", async (req, res) => {
 
     const response =
       await openai.chat.completions.create({
-        model: "gemma-4-31b-it",
+        model: process.env.MODEL_NAME || "gemini-2.5-flash-lite",
 
         temperature: 0.6,
 
