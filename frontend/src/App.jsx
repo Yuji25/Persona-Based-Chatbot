@@ -111,7 +111,7 @@ function App() {
 
     try {
       const response = await fetch(
-        `${import.meta.env.VITE_API_BASE_URL || 'http://localhost:411'}/chat`,
+        `${import.meta.env.VITE_API_URL || 'http://localhost:411'}/chat`,
         {
           method: 'POST',
           headers: {
